@@ -1,0 +1,51 @@
+# JetBrains IDEA
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/misc.xml
+.idea/*.local.*
+.idea/dictionaries
+.idea_modules/
+*.iml
+
+# Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+sftp-config.json
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# General
+*.mo
+*.pot
+*.log
+*~
+
+# Mac OS X
+.DS_Store
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+.directory
+.Trash-*
+
+# Vagrant
+.vagrant/

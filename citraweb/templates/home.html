@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block content %}
+    <!-- THIS IS NOT ACTUALLY WHAT GOES HERE
+         but the design part of the site is still not figured out
+      -->
+    <style>
+    .name-header {
+        text-align: center;
+    }
+    .name-header h1 {
+        font-size: 150px;
+    }
+    .name-header h2 {
+        font-size: 60px;
+    }
+    </style>
+    <div class="name-header">
+        <h1>Citra</h1>
+        <h2>An Experimental 3DS Emulator</h2>
+    </div>
+    <hr />
+    <h1>
+    About Citra
+    </h1>
+    <dl>
+        <dt>What is Citra?</dt>
+        <dd><p>Citra is a work-in-progress emulator for the Nintendo 3DS.</p></dd>
+
+        <dt>What can it do?</dt>
+        <dd><p>It can currently emulate <a href="https://github.com/smealum/ctrulib">ctrulib</a>-built homebrew programs,
+               such as <a href="https://github.com/smealum/yeti3DS">Smealum's port of Yeti3D</a>.</p>
+            <p>Citra is also beginning to run some commercial games, but all are very broken and unplayable.</p></dd>
+
+        <dt>What platforms does Citra support?</dt>
+        <dd><p>We're pleased to say that Citra works on all three major desktop OSs!</p>
+            <p>Citra is compatible with Windows, Linux, and OS X. In the far future, mobile platforms may be targeted
+               as well.</p></dd>
+
+        <dt>Where can I download Citra?</dt>
+        <dd><p>At the moment, there are no stable versions of Citra for you to download. Soon, we'll make available nightly
+               builds for users to download, but for now you'll have to compile from source. Once Citra has progressed to the
+               point where a stable version becomes viable.</p></dd>
+
+        <dt>How can I help?</dt>
+        <dd><p>Citra's source is hosted on GitHub, which is a platform where developers can come together on a project,
+               submitting pull requests with code changes.</p>
+
+            <p>You probably want to check out the contributor's guide and the developer information. You can look at the
+               TODO list for ideas. Qt or GPU code (make sure to talk to neobrain on IRC first) would be very appreciated
+               at the moment.</p>
+
+            <p>You can also chat with us at #citra on freenode. We'll take all the help we can get!</p>
+
+            <p>If you can't contribute any code, we also appreciate donations (no matter how small!), which we would use
+               to buy systems and games to test with, or pay for infrastructure and web costs.</p></dd>
+    </dl>
+{% endblock %}

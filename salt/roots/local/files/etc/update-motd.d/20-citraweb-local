@@ -1,0 +1,7 @@
+#!/bin/sh
+echo "###############################################################################"
+echo "Hello! Welcome to the Citra-web local setup."
+echo "For your debugging convenience, a server is not configured by default."
+echo "To start one, use django's 'runserver.'"
+echo "###############################################################################"
+

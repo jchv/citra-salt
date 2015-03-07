@@ -1,0 +1,33 @@
+file_client: local
+environment: local
+
+grains:
+  roles:
+    - web
+    - database
+
+file_roots:
+  base:
+    - /srv/salt/roots/base
+  local:
+    - /srv/salt/roots/local
+    - /srv/salt/roots/base
+  staging:
+    - /srv/salt/roots/staging
+    - /srv/salt/roots/base
+  production:
+    - /srv/salt/roots/production
+    - /srv/salt/roots/base
+
+pillar_roots:
+  base:
+    - /srv/salt/pillar/base
+  local:
+    - /srv/salt/pillar/local
+    - /srv/salt/pillar/base
+  staging:
+    - /srv/salt/pillar/staging
+    - /srv/salt/pillar/base
+  production:
+    - /srv/salt/pillar/production
+    - /srv/salt/pillar/base

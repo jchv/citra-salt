@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% for post in posts %}
+    <div>
+        <div class="page-header">
+            <h2><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
+            <span>
+                by {% for user in post.authors.all %}{{ user.display_name }}{% empty %}nobody{% endfor %}
+                {% if not post.published %}
+                    <span class="label label-warning"><i class="fa fa-unlock"></i> Unpublished</span>
+                {% endif %}
+            </span>
+        </div>
+        <div>{{ post.content_brief }}</div>
+    </div>
+    {% endfor %}
+    <ul class="pagination">
+        {% if posts.has_previous_page %}
+            <li>
+                <a href="?page={{ posts.previous_page }}" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+        {% endif %}
+        {% for page in posts.page_numbers %}
+            {% if page == posts.page_num %}
+            <li class="active"><a href="?page={{ page }}">{{ page }}</a></li>
+            {% elif page == '...' %}
+            <li class="disabled"><a>{{ page }}</a></li>
+            {% else %}
+            <li><a href="?page={{ page }}">{{ page }}</a></li>
+            {% endif %}
+        {% endfor %}
+        {% if posts.has_next_page %}
+            <li>
+                <a href="?page={{ posts.next_page }}" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        {% endif %}
+    </ul>
+{% endblock %}

@@ -1,0 +1,2 @@
+django:
+  secret_key: jiJp9ZZC17lmvtpZ67ltedMkLxvfEhf1IfUf3uQH4JE7WQ0RAMr3peQ
