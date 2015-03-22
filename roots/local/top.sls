@@ -6,7 +6,6 @@ local:
     - paths
     - git
     - zsh
-    - users
 
   'roles:database':
     - match: grain
@@ -16,5 +15,6 @@ local:
   'roles:web':
     - match: grain
     - local-motd
+    - web.users
     - web.nginx
     - web.django

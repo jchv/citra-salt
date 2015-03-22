@@ -6,7 +6,6 @@ production:
     - paths
     - git
     - zsh
-    - users
 
   'roles:database':
     - match: grain
@@ -15,6 +14,7 @@ production:
 
   'roles:web':
     - match: grain
+    - web.users
     - web.nginx
     - web.django
     - web.uwsgi

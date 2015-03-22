@@ -6,7 +6,6 @@ staging:
     - paths
     - git
     - zsh
-    - users
 
   'roles:database':
     - match: grain
@@ -15,6 +14,7 @@ staging:
 
   'roles:web':
     - match: grain
+    - web.users
     - web.nginx
     - web.django
     - web.uwsgi
