@@ -1,6 +1,6 @@
 latest-source:
   git.latest:
-    - name: git://github.com/johnwchadwick/citra-emu.git
+    - name: git://github.com/johnwchadwick/citra-web.git
     - rev: master
     - target: /opt/citra-web/
     - require:
