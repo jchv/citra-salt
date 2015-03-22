@@ -24,3 +24,10 @@ migrations:
     - require:
       - cmd: citra-deps
       - postgres_database: {{ pillar['db']['name'] }}
+
+collectstatic:
+  cmd.run:
+    - name: /opt/citra-web/manage.py collectstatic
+    - user: root
+    - require:
+      - cmd: citra-deps
