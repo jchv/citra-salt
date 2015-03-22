@@ -4,6 +4,7 @@ citra-web:
     - require:
       - pkg: supervisor
       - cmd: citra-deps
+      - user: citraweb
     - watch:
       - file: /etc/supervisor/conf.d/citra-web.conf
       - file: /etc/citra-web/settings.yaml

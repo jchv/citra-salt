@@ -6,6 +6,7 @@ production:
     - paths
     - git
     - zsh
+    - users
 
   'roles:database':
     - match: grain
