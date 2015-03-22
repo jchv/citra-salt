@@ -1,0 +1,21 @@
+uwsgi:
+  master       : true
+
+  uid          : {{ pillar['uwsgi']['uid'] }}
+  gid          : {{ pillar['uwsgi']['gid'] }}
+
+  chdir        : /opt/citra-web/
+  pythonpath   : /opt/citra-web/
+  module       : citraweb.wsgi:application
+
+  processes    : 4
+  max-requests : 5000
+  thunder-lock : true
+
+  socket       : /var/run/citraweb-uwsgi.sock
+  pidfile      : /var/run/citraweb-uwsgi.pid
+  logto        : /var/log/citraweb-uwsgi.log
+  touch-reload : /tmp/.reload
+
+  chmod-socket : 666
+  vacuum       : true

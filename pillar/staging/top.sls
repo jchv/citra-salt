@@ -2,3 +2,4 @@ staging:
   '*':
     - db
     - secrets
+    - uwsgi

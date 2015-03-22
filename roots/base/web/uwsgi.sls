@@ -7,6 +7,7 @@ citra-web:
     - watch:
       - file: /etc/supervisor/conf.d/citra-web.conf
       - file: /etc/citra-web/settings.yaml
+      - file: /etc/citra-web/uwsgi.yml
 
 /etc/supervisor/conf.d/citra-web.conf:
   file.managed:
@@ -16,5 +17,12 @@ citra-web:
     - group: root
     - mode: 644
     - require:
-      - cmd: citra-deps
-      - file: /etc/citra-web/settings.yaml
+      - pkg: supervisor
+
+/etc/citra-web/uwsgi.yml:
+  file.managed:
+    - source: salt://web/etc/citra-web/uwsgi.yml
+    - template: jinja
+    - user: root
+    - group: root
+    - mode: 644
