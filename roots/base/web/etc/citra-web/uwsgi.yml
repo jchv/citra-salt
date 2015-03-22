@@ -13,8 +13,6 @@ uwsgi:
   thunder-lock : true
 
   socket       : /var/run/citraweb-uwsgi.sock
-  pidfile      : /var/run/citraweb-uwsgi.pid
-  logto        : /var/log/citraweb-uwsgi.log
   touch-reload : /tmp/.reload
 
   chmod-socket : 666
