@@ -1,6 +1,8 @@
 environment: {{ env }}
 databaseUri: "postgres://{{ pillar['db']['username'] }}:{{ pillar['db']['password'] }}@{{ pillar['db']['host'] }}/{{ pillar['db']['name'] }}"
 secretKey: "{{ pillar['django']['secret_key'] }}"
+awsKey: "{{ pillar['aws_key'] }}"
+awsSecretKey: "{{ pillar['aws_secret_key'] }}"
 {% if salt['pillar.get']('apis:sentry_dsn') %}
 sentryDsn: "{{ pillar['apis']['sentry_dsn'] }}"
 {% endif %}

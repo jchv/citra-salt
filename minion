@@ -5,6 +5,7 @@ grains:
   roles:
     - web
     - database
+    - forum
 
 file_roots:
   base:

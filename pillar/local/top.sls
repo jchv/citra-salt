@@ -1,5 +1,5 @@
 local:
   '*':
     - db
-    - secrets
     - uwsgi
+    - env

@@ -1,5 +1,0 @@
-staging:
-  '*':
-    - db
-    - secrets
-    - uwsgi

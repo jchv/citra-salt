@@ -18,3 +18,9 @@ local:
     - web.users
     - web.nginx
     - web.django
+
+  'roles:forum':
+    - match: grain
+    - php
+    - forum.mybb
+    - s3fs

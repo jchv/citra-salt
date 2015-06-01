@@ -1,5 +1,0 @@
-production:
-  '*':
-    - db
-    - secrets
-    - uwsgi
