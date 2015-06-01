@@ -49,3 +49,7 @@ Desktop.ini
 
 # Vagrant
 .vagrant/
+
+# Salt
+pillar/staging
+pillar/production
