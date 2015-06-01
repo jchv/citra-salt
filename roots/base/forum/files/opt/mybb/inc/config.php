@@ -24,8 +24,8 @@ $config['database']['table_prefix'] = 'mybb_';
 
 // Memcache
 $config['cache_store'] = 'memcached';
-$config['memcached']['host'] = 'localhost';
-$config['memcached']['port'] = 11211;
+$config['memcache']['host'] = 'localhost';
+$config['memcache']['port'] = 11211;
 
 // Logging
 $config['log_pruning'] = array(
