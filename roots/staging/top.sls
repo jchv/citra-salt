@@ -19,3 +19,9 @@ staging:
     - web.django
     - web.uwsgi
     - web.repo
+
+  'roles:forum':
+    - match: grain
+    - php
+    - forum.mybb
+    - s3fs
