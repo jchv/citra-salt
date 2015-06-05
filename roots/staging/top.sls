@@ -6,6 +6,7 @@ staging:
     - paths
     - git
     - zsh
+    - ssmtp
 
   'roles:database':
     - match: grain
