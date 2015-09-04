@@ -16,6 +16,7 @@ local:
   'roles:web':
     - match: grain
     - local-motd
+    - dev-server
     - web.users
     - web.nginx
     - web.django

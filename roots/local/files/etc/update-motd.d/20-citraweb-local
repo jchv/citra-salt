@@ -2,6 +2,9 @@
 echo "###############################################################################"
 echo "Hello! Welcome to the Citra-web local setup."
 echo "For your debugging convenience, a server is not configured by default."
-echo "To start one, use django's 'runserver.'"
+echo "The following commands are installed:"
+echo "  - devserver: Runs a test server. Visit http://localhost:8800 to see it."
+echo "  - migrate: Runs migrations on the Django application."
+echo "  - makemigrations: Creates automatic migrations on Django models."
+echo "  - collectstatic: Collects static files."
 echo "###############################################################################"
-
