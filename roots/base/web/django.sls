@@ -19,7 +19,7 @@ citra-deps:
 
 migrations:
   cmd.run:
-    - name: /opt/citra-web/manage.py migrate --noinput
+    - name: python3 /opt/citra-web/manage.py migrate --noinput
     - user: root
     - require:
       - cmd: citra-deps
@@ -27,7 +27,7 @@ migrations:
 
 collectstatic:
   cmd.run:
-    - name: /opt/citra-web/manage.py collectstatic --noinput
+    - name: python3 /opt/citra-web/manage.py collectstatic --noinput
     - user: root
     - require:
       - cmd: citra-deps
