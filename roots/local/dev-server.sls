@@ -33,3 +33,12 @@
     - contents: |
         #!/bin/sh
         python3 /opt/citra-web/manage.py collectstatic $*
+
+/usr/local/bin/createsuperuser:
+  file.managed:
+    - user: root
+    - group: root
+    - mode: 755
+    - contents: |
+        #!/bin/sh
+        python3 /opt/citra-web/manage.py createsuperuser $*
