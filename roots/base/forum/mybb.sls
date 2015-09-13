@@ -42,7 +42,7 @@ mybb-settings-php:
 mybb-upload-dir-mount:
   mount.mounted:
     - name: /opt/mybb/uploads/
-    - device: s3fs#tmp-citra-static:/forum/uploads
+    - device: s3fs#static.citra-emu.org:/forum/uploads
     - fstype: fuse
     - opts: nonempty,allow_other
     - require:
