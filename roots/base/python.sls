@@ -19,3 +19,9 @@ python3:
       - build-essential
       - libyaml-dev
       - postgresql-server-dev-9.3
+      - libjpeg-turbo8-dev
+      - zlib1g-dev
+      - libtiff4-dev
+      - libfreetype6-dev
+      - liblcms1-dev
+      - libwebp-dev
